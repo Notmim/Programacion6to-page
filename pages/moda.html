@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fagenix Moda</title>
+  <link rel="stylesheet" href="../css/moda-styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <button class="icon-btn menu-icon">
+        <i class="fas fa-bars"></i>
+      </button>
+      
+      <div class="logo">
+        <a href="../index.html">
+          <div class="logo-icon"></div>
+          <h1>Fagenix</h1>
+        </a>
+      </div>
+      
+      <div class="search-container">
+        <input type="text" class="search-input" placeholder="Buscar productos...">
+        <button class="search-btn">
+          <i class="fas fa-search"></i>
+        </button>
+      </div>
+      
+      <div class="header-icons">
+        <button class="icon-btn cart-btn">
+          <i class="fas fa-shopping-cart"></i>
+        </button>
+        <button class="icon-btn">
+          <i class="far fa-user"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero-banner">
+    <div class="hero-content">
+      <div class="back-button">
+        <a href="../index.html">
+          <i class="fas fa-arrow-left"></i>
+          <span>Volver al inicio</span>
+        </a>
+      </div>
+      <h1>Fagenix Moda</h1>
+      <p>Estilo argentino de calidad premium</p>
+      <div class="hero-badges">
+        <div class="badge">
+          <i class="fas fa-shipping-fast"></i>
+          <span>Envío express</span>
+        </div>
+        <div class="badge">
+          <i class="fas fa-undo-alt"></i>
+          <span>Cambios gratis</span>
+        </div>
+        <div class="badge">
+          <i class="fas fa-certificate"></i>
+          <span>Calidad premium</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-bg-pattern"></div>
+  </section>
+
+  <main class="main-content">
+    <div class="filters-bar">
+      <div class="filter-group">
+        <button class="filter-btn active" data-category="all">
+          <i class="fas fa-th"></i>
+          Todo
+        </button>
+        <button class="filter-btn" data-category="hombre">
+          <i class="fas fa-male"></i>
+          Hombre
+        </button>
+        <button class="filter-btn" data-category="mujer">
+          <i class="fas fa-female"></i>
+          Mujer
+        </button>
+        <button class="filter-btn" data-category="calzado">
+          <i class="fas fa-shoe-prints"></i>
+          Calzado
+        </button>
+      </div>
+    </div>
+
+    <section class="category-section" data-category="hombre">
+      <div class="section-header">
+        <h2>
+          <i class="fas fa-male"></i>
+          Ropa Hombre
+        </h2>
+        <p>Estilo clásico y moderno para el hombre argentino</p>
+      </div>
+      
+      <div class="product-grid">
+        <div class="product-card" data-category="hombre">
+          <div class="product-image">
+            <img src="../media/remeras.jpg" alt="Remeras Básicas" loading="lazy">
+            <div class="product-badge trending">Tendencia</div>
+            <div class="size-options">
+              <span class="size" data-size="S">S</span>
+              <span class="size" data-size="M">M</span>
+              <span class="size" data-size="L">L</span>
+              <span class="size" data-size="XL">XL</span>
+            </div>
+            <div class="product-actions">
+              <button class="action-btn wishlist-btn">
+                <i class="far fa-heart"></i>
+              </button>
+              <button class="action-btn quick-view-btn">
+                <i class="fas fa-eye"></i>
+              </button>
+            </div>
+          </div>
+          <div class="product-info">
+            <div class="product-category">Remeras</div>
+            <h3>Remeras Básicas</h3>
+            <p>Algodón pima premium, diseño atemporal</p>
+            <div class="product-rating">
+              <div class="stars">★★★★★</div>
+              <span class="rating-count">(124)</span>
+            </div>
+            <div class="product-footer">
+              <div class="price-group">
+                <span class="price">$14.999</span>
+                <span class="price-old">$19.499</span>
+              </div>
+              <button class="add-to-cart">
+                <i class="fas fa-shopping-cart"></i>
+                <span>Agregar</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        
+        <div class="product-card" data-category="hombre">
+          <div class="product-image">
+            <img src="../media/chalecos.jpg" alt="Chalecos" loading="lazy">
+            <div class="product-badge new">Nuevo</div>
+            <div class="size-options">
+              <span class="size" data-size="S">S</span>
+              <span class="size" data-size="M">M</span>
+              <span class="size" data-size="L">L</span>
+              <span class="size" data-size="XL">XL</span>
+            </div>
+            <div class="product-actions">
+              <button class="action-btn wishlist-btn">
+                <i class="far fa-heart"></i>
+              </button>
+              <button class="action-btn quick-view-btn">
+                <i class="fas fa-eye"></i>
+              </button>
+            </div>
+          </div>
+          <div class="product-info">
+            <div class="product-category">Chalecos</div>
+            <h3>Chalecos</h3>
+            <p>Formales e informales, versatilidad única</p>
+            <div class="product-rating">
+              <div class="stars">★★★★☆</div>
+              <span class="rating-count">(89)</span>
+            </div>
+            <div class="product-footer">
+              <div class="price-group">
+                <span class="price">$18.499</span>
+              </div>
+              <button class="add-to-cart">
+                <i class="fas fa-shopping-cart"></i>
+                <span>Agregar</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        
+        <div class="product-card" data-category="hombre">
+          <div class="product-image">
+            <img src="../media/ponchos.jpg" alt="Ponchos" loading="lazy">
+            <div class="product-badge premium">Premium</div>
+            <div class="size-options">
+              <span class="size" data-size="M">M</span>
+              <span class="size" data-size="L">L</span>
+              <span class="size" data-size="XL">XL</span>
+            </div>
+            <div class="product-actions">
+              <button class="action-btn wishlist-btn">
+                <i class="far fa-heart"></i>
+              </button>
+              <button class="action-btn quick-view-btn">
+                <i class="fas fa-eye"></i>
+              </button>
+            </div>
+          </div>
+          <div class="product-info">
+            <div class="product-category">Abrigos</div>
+            <h3>Ponchos</h3>
+            <p>Lana de oveja patagónica, tradición argentina</p>
+            <div class="product-rating">
+              <div class="stars">★★★★★</div>
+              <span class="rating-count">(156)</span>
+            </div>
+            <div class="product-footer">
+              <div class="price-group">
+                <span class="price">$22.999</span>
+              </div>
+              <button class="add-to-cart">
+                <i class="fas fa-shopping-cart"></i>
+                <span>Agregar</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="category-section" data-category="mujer">
+      <div class="section-header">
+        <h2>
+          <i class="fas fa-female"></i>
+          Ropa Mujer
+        </h2>
+        <p>Elegancia y comodidad para la mujer moderna</p>
+      </div>
+      
+      <div class="product-grid">
+        <div class="product-card" data-category="mujer">
+          <div class="product-image">
+            <img src="../media/vestidos.jpg" alt="Vestidos" loading="lazy">
+            <div class="product-badge trending">Tendencia</div>
+            <div class="size-options">
+              <span class="size" data-size="XS">XS</span>
+              <span class="size" data-size="S">S</span>
+              <span class="size" data-size="M">M</span>
+              <span class="size" data-size="L">L</span>
+              <span class="size" data-size="XL">XL</span>
+            </div>
+            <div class="product-actions">
+              <button class="action-btn wishlist-btn">
+                <i class="far fa-heart"></i>
+              </button>
+              <button class="action-btn quick-view-btn">
+                <i class="fas fa-eye"></i>
+              </button>
+            </div>
+          </div>
+          <div class="product-info">
+            <div class="product-category">Vestidos</div>
+            <h3>Vestidos Casuales</h3>
+            <p>Diseños únicos argentinos, telas de primera calidad</p>
+            <div class="product-rating">
+              <div class="stars">★★★★★</div>
+              <span class="rating-count">(167)</span>
+            </div>
+            <div class="product-footer">
+              <div class="price-group">
+                <span class="price">$18.999</span>
+                <span class="price-old">$23.999</span>
+              </div>
+              <button class="add-to-cart">
+                <i class="fas fa-shopping-cart"></i>
+                <span>Agregar</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        
+        <div class="product-card" data-category="mujer">
+          <div class="product-image">
+            <img src="../media/blusas.jpg" alt="Blusas" loading="lazy">
+            <div class="product-badge new">Nuevo</div>
+            <div class="size-options">
+              <span class="size" data-size="XS">XS</span>
+              <span class="size" data-size="S">S</span>
+              <span class="size" data-size="M">M</span>
+              <span class="size" data-size="L">L</span>
+              <span class="size" data-size="XL">XL</span>
+            </div>
+            <div class="product-actions">
+              <button class="action-btn wishlist-btn">
+                <i class="far fa-heart"></i>
+              </button>
+              <button class="action-btn quick-view-btn">
+                <i class="fas fa-eye"></i>
+              </button>
+            </div>
+          </div>
+          <div class="product-info">
+            <div class="product-category">Blusas</div>
+            <h3>Blusas Elegantes</h3>
+            <p>Para oficina y ocasiones especiales</p>
+            <div class="product-rating">
+              <div class="stars">★★★★☆</div>
+              <span class="rating-count">(92)</span>
+            </div>
+            <div class="product-footer">
+              <div class="price-group">
+                <span class="price">$18.899</span>
+              </div>
+              <button class="add-to-cart">
+                <i class="fas fa-shopping-cart"></i>
+                <span>Agregar</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        
+        <div class="product-card" data-category="mujer">
+          <div class="product-image">
+            <img src="../media/pantalones.jpg" alt="Pantalones" loading="lazy">
+            <div class="product-badge bestseller">Más vendido</div>
+            <div class="size-options">
+              <span class="size" data-size="26">26</span>
+              <span class="size" data-size="28">28</span>
+              <span class="size" data-size="30">30</span>
+              <span class="size" data-size="32">32</span>
+              <span class="size" data-size="34">34</span>
+            </div>
+            <div class="product-actions">
+              <button class="action-btn wishlist-btn">
+                <i class="far fa-heart"></i>
+              </button>
+              <button class="action-btn quick-view-btn">
+                <i class="fas fa-eye"></i>
+              </button>
+            </div>
+          </div>
+          <div class="product-info">
+            <div class="product-category">Pantalones</div>
+            <h3>Pantalones de Vestir</h3>
+            <p>Corte perfecto, tela strech de alta calidad</p>
+            <div class="product-rating">
+              <div class="stars">★★★★★</div>
+              <span class="rating-count">(234)</span>
+            </div>
+            <div class="product-footer">
+              <div class="price-group">
+                <span class="price">$17.299</span>
+              </div>
+              <button class="add-to-cart">
+                <i class="fas fa-shopping-cart"></i>
+                <span>Agregar</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="category-section" data-category="calzado">
+      <div class="section-header">
+        <h2>
+          <i class="fas fa-shoe-prints"></i>
+          Calzado
+        </h2>
+        <p>Comodidad y estilo para cada paso</p>
+      </div>
+      
+      <div class="product-grid">
+        <div class="product-card" data-category="calzado">
+          <div class="product-image">
+            <img src="../media/alpargatas.jpg" alt="Alpargatas" loading="lazy">
+            <div class="product-badge traditional">Tradicional</div>
+            <div class="size-options">
+              <span class="size" data-size="38">38</span>
+              <span class="size" data-size="39">39</span>
+              <span class="size" data-size="40">40</span>
+              <span class="size" data-size="41">41</span>
+              <span class="size" data-size="42">42</span>
+            </div>
+            <div class="product-actions">
+              <button class="action-btn wishlist-btn">
+                <i class="far fa-heart"></i>
+              </button>
+              <button class="action-btn quick-view-btn">
+                <i class="fas fa-eye"></i>
+              </button>
+            </div>
+          </div>
+          <div class="product-info">
+            <div class="product-category">Calzado</div>
+            <h3>Alpargatas</h3>
+            <p>Estilo tradicional argentino, súper cómodas</p>
+            <div class="product-rating">
+              <div class="stars">★★★★★</div>
+              <span class="rating-count">(203)</span>
+            </div>
+            <div class="product-footer">
+              <div class="price-group">
+                <span class="price">$29.899</span>
+              </div>
+              <button class="add-to-cart">
+                <i class="fas fa-shopping-cart"></i>
+                <span>Agregar</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        
+        <div class="product-card" data-category="calzado">
+          <div class="product-image">
+            <img src="../media/botas.jpg" alt="Botas" loading="lazy">
+            <div class="product-badge bestseller">Más vendido</div>
+            <div class="size-options">
+              <span class="size" data-size="38">38</span>
+              <span class="size" data-size="39">39</span>
+              <span class="size" data-size="40">40</span>
+              <span class="size" data-size="41">41</span>
+              <span class="size" data-size="42">42</span>
+            </div>
+            <div class="product-actions">
+              <button class="action-btn wishlist-btn">
+                <i class="far fa-heart"></i>
+              </button>
+              <button class="action-btn quick-view-btn">
+                <i class="fas fa-eye"></i>
+              </button>
+            </div>
+          </div>
+          <div class="product-info">
+            <div class="product-category">Calzado</div>
+            <h3>Botas</h3>
+            <p>Cuero puro argentino, durabilidad garantizada</p>
+            <div class="product-rating">
+              <div class="stars">★★★★★</div>
+              <span class="rating-count">(178)</span>
+            </div>
+            <div class="product-footer">
+              <div class="price-group">
+                <span class="price">$38.499</span>
+              </div>
+              <button class="add-to-cart">
+                <i class="fas fa-shopping-cart"></i>
+                <span>Agregar</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        
+        <div class="product-card" data-category="calzado">
+          <div class="product-image">
+            <img src="../media/medias.jpg" alt="Medias y ropa interior" loading="lazy">
+            <div class="product-badge eco">Eco-friendly</div>
+            <div class="size-options">
+              <span class="size" data-size="S">S</span>
+              <span class="size" data-size="M">M</span>
+              <span class="size" data-size="L">L</span>
+              <span class="size" data-size="XL">XL</span>
+            </div>
+            <div class="product-actions">
+              <button class="action-btn wishlist-btn">
+                <i class="far fa-heart"></i>
+              </button>
+              <button class="action-btn quick-view-btn">
+                <i class="fas fa-eye"></i>
+              </button>
+            </div>
+          </div>
+          <div class="product-info">
+            <div class="product-category">Ropa interior</div>
+            <h3>Medias y ropa interior</h3>
+            <p>Para todas las estaciones, máximo confort</p>
+            <div class="product-rating">
+              <div class="stars">★★★★☆</div>
+              <span class="rating-count">(95)</span>
+            </div>
+            <div class="product-footer">
+              <div class="price-group">
+                <span class="price">$6.299</span>
+              </div>
+              <button class="add-to-cart">
+                <i class="fas fa-shopping-cart"></i>
+                <span>Agregar</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    </section>
+  </main>
+
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-brand">
+        <h2>Fagenix</h2>
+        <p>Tu tienda online argentina de confianza. Productos de calidad, envíos seguros y atención personalizada para toda la familia.</p>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/mercado.pete/" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/gena_coniglio/" class="social-icon"><i class="fab fa-instagram"></i></a>
+          <a href="https://wa.me/5493413573960" class="social-icon whatsapp"> <i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+      
+      <div class="footer-section">
+        <h3>Comprar</h3>
+        <a href="alimentos.html">Fagenix Alimentos</a>
+        <a href="moda.html">Fagenix Moda</a>
+      </div>
+      
+      <div class="footer-section">
+        <h3>Ayuda</h3>
+        <a href="preguntas-frecuentes.html">Preguntas frecuentes</a>
+        <a href="terminos_uso.html">Términos de uso</a>
+      </div>
+      
+      <div class="footer-section">
+        <h3>Contacto</h3>
+        <a href="#">WhatsApp: +54 9 341 357-3960</a>
+        <a href="#">Email: info@fagenix.com</a>
+        <a href="#">Rosario, Santa Fe</a>
+      </div>
+    </div>
+    
+    <div class="copyright">
+      <p>&copy; 2025 Fagenix. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="../js/search.js"></script>
+  <script>
+    // Filtros de categoría
+    document.querySelectorAll('.filter-btn').forEach(btn => {
+      btn.addEventListener('click', function() {
+        document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+        this.classList.add('active');
+        
+        const category = this.dataset.category;
+        const cards = document.querySelectorAll('.product-card');
+        
+        cards.forEach(card => {
+          if (category === 'all' || card.dataset.category === category) {
+            card.style.display = 'block';
+            card.style.animation = 'fadeIn 0.5s ease';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    });
+
+    // Selección de tallas
+    document.querySelectorAll('.size').forEach(size => {
+      size.addEventListener('click', function() {
+        const sizeGroup = this.parentElement;
+        sizeGroup.querySelectorAll('.size').forEach(s => s.classList.remove('active'));
+        this.classList.add('active');
+      });
+    });
+
+
+    
+    // Animaciones de scroll
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.opacity = '1';
+          entry.target.style.transform = 'translateY(0)';
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('.product-card').forEach(card => {
+      card.style.opacity = '0';
+      card.style.transform = 'translateY(30px)';
+      card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+      observer.observe(card);
+    });
+  </script>
+  <script src="../js/search_system.js"></script>
+</body>
+</html>
