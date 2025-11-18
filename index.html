@@ -174,8 +174,8 @@
             
             <div class="footer-section">
                 <h3>Contacto</h3>
-                <a href="#">WhatsApp: +54 9 341 357-3960</a>
-                <a href="#">Email: info@fagenix.com</a>
+                <a href="#" class="email-contact-trigger">Email: info@fagenix.com</a>
+                <a href="https://wa.me/5493413573960">WhatsApp: +54 9 341 357-3960</a>
                 <a href="#">Rosario, Santa Fe</a>
             </div>
         </div>
@@ -185,7 +185,38 @@
         </div>
     </footer>
 
-    <script src="search.js"></script>
+    <!-- Contact Form Modal -->
+    <div id="contactModal" class="contact-modal">
+        <div class="contact-modal-overlay"></div>
+        <div class="contact-modal-content">
+            <button class="contact-modal-close">&times;</button>
+            <h2>Envíanos un mensaje</h2>
+            <form id="contactForm" class="contact-form">
+                <div class="form-group">
+                    <label for="contactName">Nombre</label>
+                    <input type="text" id="contactName" name="name" placeholder="Tu nombre completo" required>
+                </div>
+                <div class="form-group">
+                    <label for="contactEmail">Correo electrónico</label>
+                    <input type="email" id="contactEmail" name="email" placeholder="tu@email.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="contactTopic">Asunto</label>
+                    <input type="text" id="contactTopic" name="topic" placeholder="Tema de tu consulta" required>
+                </div>
+                <div class="form-group">
+                    <label for="contactComments">Comentarios</label>
+                    <textarea id="contactComments" name="comments" placeholder="Cuéntanos tu consulta..." rows="5" required></textarea>
+                </div>
+                <button type="submit" class="send-button">
+                    <span>Enviar mensaje</span>
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/contact-form.js"></script>
     <script>
         // Smooth scrolling para los enlaces internos
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
